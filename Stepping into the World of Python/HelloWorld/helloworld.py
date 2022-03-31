@@ -1,1 +1,6 @@
 print('Hello, World!')
+print(1+4)
+print(6*9)
+print()
+print("This is the of the lesson")
+print("This is the end of the lesson", " or is it?", " keep learning more Python for your health... ", 43)
