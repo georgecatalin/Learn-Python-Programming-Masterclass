@@ -5,3 +5,6 @@ for part in computer_parts:
 
 print("-" * 50)
 print(computer_parts[0])
+
+print(computer_parts[0:3])
+print(computer_parts[-1])
