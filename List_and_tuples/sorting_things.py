@@ -21,3 +21,5 @@ another_list = my_list.sort()  # result is None cause it does not create a new l
 print(another_list)
 print(my_list)
 
+other_string = sorted("The quick brown fox jumps over the lazy dog.")
+print(other_string)
