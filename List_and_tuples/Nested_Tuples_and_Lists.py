@@ -17,3 +17,8 @@ for album in albums:
 for album in albums:
     song, band, year = album
     print("Album: Song {0}, Band {1}, Year {2}".format(song,band,year))
+
+# another version
+print("Another version of unpacking")
+for song, band, year in albums:
+    print("Album: song is {0} , band is {1} and year is {2}".format(song, band, year))
