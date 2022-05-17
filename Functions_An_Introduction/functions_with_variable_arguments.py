@@ -11,6 +11,11 @@ print(0, 1, 2 , 4, sep=":")
 
 
 def my_function(*arguments):
+    """
+    Args:
+        *arguments:
+    Returns:
+    """
     print(arguments)
     for i in arguments:
         print(i)
