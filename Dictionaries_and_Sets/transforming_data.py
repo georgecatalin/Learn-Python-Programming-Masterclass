@@ -23,10 +23,17 @@ while True:
     for key, value in display_dictionary.items():
         print(f"{key} - {value}")
 
-    if choice == 0:
+    if choice == "0":
         break
     elif choice in display_dictionary:
         selected_option = display_dictionary[choice]
         print(f"You have selected {selected_option}")
         print("Checking ingredients...")
-        print(recipes[selected_option])
+        needed_ingredients = recipes[selected_option]
+        print(needed_ingredients)
+        print("Checking the availability of the items...")
+        for ingredient in needed_ingredients:
+            if ingredient in pantry:
+                print(f"\t {ingredient} is available")
+            else:
+                print(f"\t You have a problem with {ingredient}")
