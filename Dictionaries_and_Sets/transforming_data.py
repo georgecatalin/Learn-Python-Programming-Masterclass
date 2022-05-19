@@ -15,6 +15,7 @@ for index, key in enumerate(recipes):
 # print(display_dictionary)
 
 while True:
+    print()
     print("Choose from the menu:")
     print("=====================")
     choice = input("> ")
@@ -24,4 +25,8 @@ while True:
 
     if choice == 0:
         break
-
+    elif choice in display_dictionary:
+        selected_option = display_dictionary[choice]
+        print(f"You have selected {selected_option}")
+        print("Checking ingredients...")
+        print(recipes[selected_option])
