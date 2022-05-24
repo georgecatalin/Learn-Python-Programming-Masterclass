@@ -16,6 +16,19 @@ def dummy_hash_function(string: str) -> int:
     return hashed % 10
 
 
+def get(string:str) -> str:
+    '''
+    A simple get function that illustrates how dictionaries use hashes as indexes to retrieve the data
+    :param string:
+    :return:
+    '''
+    hashed = dummy_hash_function(string)
+    if values[hashed]:
+        return values[hashed]
+    else:
+        return None
+
+
 keys = [""] * 10
 values = keys.copy()
 print(id(keys), keys)
@@ -32,3 +45,9 @@ for key, value in dictionary_sample.items():
 print()
 print(keys)
 print(values)
+my_value = get("dacia")
+print(my_value)
+
+print()
+my_value=get("peugeot")
+print(my_value)
