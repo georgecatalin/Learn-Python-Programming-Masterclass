@@ -44,9 +44,9 @@ while mode not in travel_mode:
 
 print(f"You have chosen {mode} : {travel_mode[mode]}")
 
-if mode =="2":
+if mode == "2":
     for element in restricted_items:
-         items.discard(element)
+          items.discard(element)
         # items.remove() returns error because it attempts to delete a non-existing item "catapult" from 'items' set
         # items.remove(element)
 
