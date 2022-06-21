@@ -11,3 +11,10 @@ with open(file_name,encoding="utf-8", newline="") as file_reader:
     csv_reader = csv.reader(file_reader, dialect=csv_dialect)
     for line in csv_reader:
         print(line)
+
+print("*" * 80)
+
+attributes = [ "delimiter", "doublequote", "escapechar", "lineterminator", "quotechar", "quoting", "skipinitialspace"]
+
+for attribute in attributes:
+    print(f"{attribute}: {repr(getattr(csv_dialect,attribute))}") # repr() displays special characters
